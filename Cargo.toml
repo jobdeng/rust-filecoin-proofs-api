@@ -5,12 +5,12 @@ description = "API to interact with the proofs system in Filecoin"
 authors = ["dignifiedquire <me@dignifiedquire.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/filecoin-project/rust-filecoin-proofs-api"
+repository = "https://github.com/jobdeng/rust-filecoin-proofs-api.git"
 readme = "README.md"
 
 [dependencies]
 anyhow = "1.0.26"
-bellperson = { version = "0.18", default-features = false }
+bellperson = { git = "https://github.com/jobdeng/bellperson.git", branch = "job/v0.18.0", default-features = false }
 bincode = "1.1.2"
 blstrs = "0.4.0"
 serde = "1.0.104"
